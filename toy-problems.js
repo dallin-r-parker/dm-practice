@@ -21,3 +21,101 @@
 
  var cat = returnIt('hh elo'); //here we created a variable to pass in the function as the parameter
  console.log(cat); //invoke the function (using console log because we want to see the answer) and put in the parameter we just made
+
+________________________________________________________________________________________________________________________________________;
+// given an array of numbers, remove the duplicate numbers
+var nums = [1, 2, 3, 5, 3, 4, 2, 7, 6];
+// nums = [1,2,3,5,4,7,6];
+
+function removeDupes(arr) {
+    var nums = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (nums.indexOf(arr[i]) === -1) {
+            nums.push(arr[i]);
+        }
+    }
+    return nums;
+}
+console.log('1:', removeDupes(nums));
+
+________________________________________________________________________________________________________________________________________;
+
+// given a sentance "hello, my name is Dallin" === the first letter of every word
+//whould be capitilized.
+
+
+var sentence = "Hello, my name is Dallin";
+
+
+function capString(input) {
+var splitString = input.toLowerCase().split(' ');
+for(var i = 0; i<splitString.length; i++){
+   splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].substring(1);
+}
+return splitString.join(' ');
+}
+
+capString(sentence);
+
+//Second solution to the same question above.
+
+var myStr = "Hello, my name is Stephen";
+
+function caps(str) {
+	var strSplit = str.split(' ');
+
+	for(var i = 0; i < strSplit.length; i++) {
+		var tempSplit = strSplit[i].split('');
+
+		tempSplit[0] = tempSplit[0].toUpperCase();
+
+		strSplit[i] = tempSplit.join('');
+	}
+
+	str = strSplit.join(' ');
+
+	return str;
+}
+
+caps(myStr);
+
+
+ ________________________________________________________________________________________________________________________________________;
+
+//find as many ways as you can to string
+
+ // http://bit.ly/2cCoJaW
+
+
+
+ function reverse(str) {
+     for (var i = 0; i < str.length; i++) {
+
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
