@@ -94,14 +94,33 @@ caps(myStr);
      }
  }
 
+ ________________________________________________________________________________________________________________________________________;
+
+ // function fibSequence() {
+ //     var fib = [];
+ //
+ //     for(var i = 1; i <= 100; i++) {
+ //         fib.push([i-1]+fib[i]);
+ //     }
+ //     return fibSequence;
+ // }
+ // console.log(fib);   <----
+__________________________________________________________________________________________________________________________________________;
 
 
+ function sayHi(clothing, adjective) {
+
+     console.log("Hi " + this.name + ".  I like your " + clothing + ".  I think you're " + adjective + ".");
+ }
+
+ sayHi.call({name: "Dave"}, "hat", "barely tolerable");
+
+ sayHi.apply({name: "Dave"}, ["hat", "barely tolerable"]);
+
+ var sayHiFn = sayHi.bind({name: "Dave"});
 
 
-
-
-
-
+ sayHiFn(" super suit", " sporty");
 
 
 
